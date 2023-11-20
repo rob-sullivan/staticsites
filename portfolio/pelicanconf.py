@@ -4,7 +4,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-THEME = "themes\customtheme"
+THEME = "themes\phantomtheme"
 
 TIMEZONE = 'Europe/Dublin'
 
