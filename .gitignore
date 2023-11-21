@@ -16,6 +16,7 @@ venv_*
 archive/
 output/
 *themes/
+phantom/
 # Mono auto generated files
 mono_crash.*
 
