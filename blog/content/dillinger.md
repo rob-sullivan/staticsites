@@ -2,7 +2,7 @@ Title: Dillinger Test
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
 Category: Python
-Tags: pelican, publishing
+Tags: Python, R, JavaScript, C#, C++, Vue, React, Django, MySQL, MongoDB, PostgreSQL, Oracle, Pandas, NumPy, Matplotlib, Seaborn, Tableau, SAS Enterprise Miner, Machine Learning, Scikit-learn, Deep Learning, TensorFlow, PyTorch, Hugging Face, Computer Vision,Opencv, PIL, NLP, NLTK, Gensim, TextBlob, spacy, BERT, GPT, LLM, GIS, QGIS, Big Data, Pysparks, Kubernetes, Synthetic Data, Unity, Unreal Engine, Blender, CI/CD, GitHub, Jenkins, Docker, JIRA, Architecture, Linux OS, Google Cloud, AWS,
 Slug: dillinger
 Authors: Alexis Metaireau, Conan Doyle
 Style:style5

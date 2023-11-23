@@ -1,10 +1,10 @@
 AUTHOR = 'Rob Sullivan'
-SITENAME = 'Rob Sullivan'
+SITENAME = 'Rob Sullivan | Portfolio'
 SITEURL = ''
 
 PATH = 'content'
 THEME = 'themes/phantom_simple'
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = 'Europe/Dublin'
 
 DEFAULT_LANG = 'English'
 
