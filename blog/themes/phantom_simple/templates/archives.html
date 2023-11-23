@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME }} - Archives{% endblock %}
+
+{% block content %}
+<div id="main">
+    <div class="inner">
+        {% block content_title %}
+        <header>
+            <h1>Archives</h1>
+        </header>
+        {% endblock %}
+        <section>
+            <dl>
+                {% for date, articles in dates|groupby('locale_date') %}
+                    <dt>{{ date }}</dt>
+                    {% for article in articles %}
+                        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+                    {% endfor %}
+                {% endfor %}
+            </dl>
+        </section>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="main">
+    <div class="inner">
+    {% block content_title %}
+        <header>
+            <h1>Portfolio of AI and Data Driven Solutions<!--,<br />--></h1>
+            <p>Whether you need a self starter to help get the organisation AI ready or a team player to help improve and maintain an existing system, I hope these examples help demonstrate by abilities and passion for AI. With a solid foundation in Data Science, including a first-class master's degree, diploma in software development, and published research, I possess the expertise to address intricate AI challenges and provide effective solutions. My skills can help enable data-driven decision-making, develo intelligent applications, or extract valuable insights.</p>
+          </header>
+    {% endblock %}
+      <section class="tiles">
+            {% for article in articles_page.object_list %}
+                <article class="{{ article.style }}">
+                    <span class="image">
+                    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{article.summary_image}}" alt="" />
+                    </span>
+                    <a href="{{ SITEURL }}/{{ article.url }}">
+                    <h2 rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</h2>
+                    <div class="content">
+                        <p>{{ article.summary }}</p>
+                    </div>
+                    </a>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+</div>
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+
+{% endblock content %}

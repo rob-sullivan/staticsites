@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME }} - Tags{% endblock %}
+
+{% block content %}
+<div id="main">
+    <div class="inner">
+        {% block content_title %}
+        <header>
+            <h1>Tags</h1>
+        </header>
+        {% endblock %}
+        <section>
+            {% for tag, articles in tags|sort %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+        {% endfor %}
+        </section>
+    </div>
+</div>
+{% endblock %}
